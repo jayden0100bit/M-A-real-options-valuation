@@ -120,7 +120,7 @@ anyone else) wanted to take it further:
   realistic.
 - **No jumps** — GBM assumes continuous price paths, but real M&A
   outcomes (regulatory approval, key customer churn, etc.) can move in
-  discrete jumps. A jump-diffusion model (Merton) could capture that.
+  discrete jumps. 
 - **Single expansion option** — in practice, an acquirer often holds a
   sequence of options (compound options), not just one shot at expansion.
 - **No real deal validated against it yet** — everything here runs on
