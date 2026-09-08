@@ -8,7 +8,7 @@ actually be willing to pay?
 I'm currently studying Statistics, so when I came
 across **real options** and found out they can be valued with
 Black-Scholes, I got interested in connecting it with stuff from my stats
-knowlegde — lognormal distributions, Monte Carlo simulation, a bit of
+knowledge — lognormal distributions, Monte Carlo simulation, a bit of
 stochastic processes. So this notebook ends up being somewhere between a
 finance topic and a statistics exercise I did for fun, not a fully
 polished professional finance analysis.
