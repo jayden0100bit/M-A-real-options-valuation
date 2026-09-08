@@ -114,9 +114,9 @@ All inputs are in clearly named variables in each section:
 This is a first pass, not a finished model. Some known gaps if I (or
 anyone else) wanted to take it further:
 
-- **Constant volatility** is the biggest simplification — real synergy
+- **Constant volatility** is a simplification — real synergy
   realization is path-dependent and volatility isn't actually constant
-  over time. A stochastic volatility model (e.g. Heston) would be more
+  over time. A stochastic volatility model would be more
   realistic.
 - **No jumps** — GBM assumes continuous price paths, but real M&A
   outcomes (regulatory approval, key customer churn, etc.) can move in
@@ -134,14 +134,14 @@ anyone else) wanted to take it further:
   not a finance/accounting major, so the corporate finance assumptions
   (WACC, terminal growth, etc.) are pulled from textbook/online examples
   rather than deep research.
-- Black-Scholes assumes lognormal returns and constant volatility — in
+- Black-Scholes assumes lognormal returns and constant volatility. In
   reality, M&A synergies are a lot messier than that, so the numbers here
   are just rough estimates for practicing the concept.
 - Volatility (`sigma`) is the most sensitive input (clearly visible in the
   sensitivity matrix) — don't just guess a number; ideally it should come
   from the historical volatility of comparable companies.
 - If anyone has feedback or corrections (especially on the finance side),
-  I'd genuinely appreciate it — still learning, and this was mostly built
+  I'd genuinely appreciate it. I'm still learning, and this was mostly built
   out of curiosity about where stats and finance overlap.
 
 ## License
