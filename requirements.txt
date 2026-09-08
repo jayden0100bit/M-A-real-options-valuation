@@ -1,0 +1,10 @@
+# Pinned to the versions this notebook was developed and tested with.
+# If you hit issues, try the loose minimum versions in the comments instead.
+
+numpy==2.4.4          # >=1.24
+pandas==3.0.2         # >=2.0
+scipy==1.17.1         # >=1.10
+matplotlib==3.10.8    # >=3.7
+jupyter==1.1.1        # >=1.0
+nbclient==0.11.0      # >=0.8
+ipykernel==7.3.0       # >=6.25
