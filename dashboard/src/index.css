@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #F7F4EE;
+  --color-card: #FCFAF6;
+  --color-ink: #14202E;
+  --color-navy: #1F3A5F;
+  --color-muted: #5B6472;
+  --color-rule: #E3DDD1;
+  --color-brass: #9A7B4F;
+  --color-s1: #2a78d6;
+  --color-s2: #eb6834;
+  --color-s3: #1baf7a;
+  --color-s4: #eda100;
+  --font-serif: "Source Serif 4", Georgia, serif;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+
+html { scroll-behavior: smooth; }
+body { @apply bg-paper text-ink font-sans antialiased; font-feature-settings: "tnum" 1, "lnum" 1; }
+.num { font-variant-numeric: tabular-nums lining-nums; }
+input[type="range"] { accent-color: var(--color-navy); }
+::selection { background: #1F3A5F22; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* grid items must be allowed to shrink below their content width (wide tables scroll inside) */
+.grid > * { min-width: 0; }
+html, body { overflow-x: clip; }
