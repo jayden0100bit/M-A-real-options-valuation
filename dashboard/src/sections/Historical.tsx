@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Dashboard } from "../lib/data";
 import { ENTITY, PALETTE, musd, pct } from "../lib/format";
-import { Legend, Panel, Section, Segmented, Source, Table, axisProps, gridProps, tooltipStyle } from "../components/ui";
+import { Legend, Panel, Segmented, Source, Table, axisProps, gridProps, tooltipStyle } from "../components/ui";
 
 const METRICS = {
   revenue: { label: "Revenue", fmt: (v: number) => musd(v), ratio: false },
@@ -15,7 +15,7 @@ const METRICS = {
 type MetricKey = keyof typeof METRICS;
 const FY = ["FY2015", "FY2016", "FY2017", "FY2018"];
 
-export default function Historical({ d }: { d: Dashboard }) {
+export default function HistoricalPanels({ d }: { d: Dashboard }) {
   const [metric, setMetric] = useState<MetricKey>("revenue");
   const [segEntity, setSegEntity] = useState<"DIS" | "21CF">("DIS");
   const series = useMemo(() => FY.map((fy) => {
@@ -38,8 +38,8 @@ export default function Historical({ d }: { d: Dashboard }) {
   const M = METRICS[metric];
   const remainNote = metric === "revenue" || metric === "ebitda" || metric === "ebitda_margin";
   return (
-    <Section id="historical" kicker="01 · Historical performance" title="Two very different businesses"
-      lede="Disney earned a steady ~30% EBITDA margin with parks-led growth. 21CF earned 21–24%, with profit concentrated in cable networks and lower cash conversion because of content spending. RemainCo, the part Disney actually bought, earned ~20% on a pro forma basis that still carries all of 21CF's corporate costs.">
+    <div className="space-y-6">
+      <p className="max-w-3xl text-sm leading-relaxed text-muted">Disney earned a steady ~30% EBITDA margin with parks-led growth. 21CF earned 21–24%, with profit concentrated in cable networks and lower cash conversion because of content spending. RemainCo, the part Disney actually bought, earned ~20% on a pro forma basis that still carries all of 21CF's corporate costs.</p>
       <Panel title="Financial metrics by fiscal year" right={<Segmented label="Metric" value={metric} onChange={setMetric}
         options={(Object.keys(METRICS) as MetricKey[]).map((k) => ({ value: k, label: METRICS[k].label }))} />}
         note={<>Fiscal years differ: Disney ends on the Saturday nearest 30 Sep (FY2015 was 53 weeks); 21CF and RemainCo end on 30 Jun. EBITDA is derived
@@ -81,6 +81,6 @@ export default function Historical({ d }: { d: Dashboard }) {
         </Panel>
       </div>
       <Source>financial_ratios.csv and segment_analysis.csv (Stage 2), built from 10-Ks FY2015–FY2018, the 2018 joint proxy and the March 2019 8-K/A.</Source>
-    </Section>
+    </div>
   );
 }

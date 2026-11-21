@@ -1,0 +1,222 @@
+perspective,method,case,metric,value,unit,value_type,notes
+A_announcement_2017-12,WACC,base,rf,0.0236,ratio,market,
+A_announcement_2017-12,WACC,base,erp,0.0569,ratio,market,
+A_announcement_2017-12,WACC,base,relevered_beta,0.869,beta,derived,
+A_announcement_2017-12,WACC,base,cost_of_equity,0.073,ratio,derived,
+A_announcement_2017-12,WACC,base,kd_pretax,0.0419,ratio,market,
+A_announcement_2017-12,WACC,base,kd_aftertax,0.0268,ratio,derived,
+A_announcement_2017-12,WACC,base,weight_debt,0.2733,ratio,derived,
+A_announcement_2017-12,WACC,base,wacc,0.0604,ratio,derived,
+A_announcement_2017-12,DCF,base (estimates),enterprise_value_ops,57602.9152,USD_m,estimate,
+A_announcement_2017-12,DCF,base (estimates),pv_explicit_fcff,9406.6746,USD_m,estimate,
+A_announcement_2017-12,DCF,base (estimates),pv_terminal_value,48196.2406,USD_m,estimate,
+A_announcement_2017-12,DCF,base (estimates),terminal_value_share_of_ev,0.8367,ratio,derived,
+A_announcement_2017-12,DCF,base (estimates),enterprise_value_incl_sky_and_investments,68719.1469,USD_m,estimate,
+A_announcement_2017-12,DCF,base (estimates),equity_value,53820.1469,USD_m,estimate,
+A_announcement_2017-12,DCF,base (estimates),equity_value_per_21cf_share,29.0753,USD_per_share,estimate,
+A_announcement_2017-12,Bridge,base,plus_sky_39pct_stake,10389.2317,USD_m,reported/estimate (see dcf_assumptions),
+A_announcement_2017-12,Bridge,base,plus_other_investments_book,727.0,USD_m,reported/estimate (see dcf_assumptions),
+A_announcement_2017-12,Bridge,base,less_debt,19849.0,USD_m,reported/estimate (see dcf_assumptions),
+A_announcement_2017-12,Bridge,base,plus_cash,6901.0,USD_m,reported/estimate (see dcf_assumptions),
+A_announcement_2017-12,Bridge,base,less_noncontrolling_interests,1951.0,USD_m,reported/estimate (see dcf_assumptions),
+A_announcement_2017-12,Bridge,base,rsn_treatment,0.0,USD_m,n/a,RSNs are inside enterprise_value_ops (part of the deal perimeter on this date; the DOJ divestiture remedy came on 27 Jun 2018). They are not added again; see the hindsight rows.
+A_announcement_2017-12,DCF scenario,bear,enterprise_value_ops,35983.9911,USD_m,estimate,"growth 1%, margin -2pp, content investment 4.5% of revenue, g 1.5%"
+A_announcement_2017-12,DCF scenario,bear,pv_explicit_fcff,6694.6427,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bear,pv_terminal_value,29289.3483,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bear,terminal_value_share_of_ev,0.814,ratio,derived,
+A_announcement_2017-12,DCF scenario,bear,enterprise_value_incl_sky_and_investments,47100.2228,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bear,equity_value,32201.2228,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bear,equity_value_per_21cf_share,17.3961,USD_per_share,estimate,
+A_announcement_2017-12,DCF scenario,base,enterprise_value_ops,57602.9152,USD_m,estimate,estimates as listed in dcf_assumptions.csv
+A_announcement_2017-12,DCF scenario,base,pv_explicit_fcff,9406.6746,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,base,pv_terminal_value,48196.2406,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,base,terminal_value_share_of_ev,0.8367,ratio,derived,
+A_announcement_2017-12,DCF scenario,base,enterprise_value_incl_sky_and_investments,68719.1469,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,base,equity_value,53820.1469,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,base,equity_value_per_21cf_share,29.0753,USD_per_share,estimate,
+A_announcement_2017-12,DCF scenario,bull,enterprise_value_ops,107749.8674,USD_m,estimate,"growth 5%, margin +2pp, content investment 1.5%, g 2.5%, 22% tax (TCJA, pending at the date)"
+A_announcement_2017-12,DCF scenario,bull,pv_explicit_fcff,15203.1712,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bull,pv_terminal_value,92546.6962,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bull,terminal_value_share_of_ev,0.8589,ratio,derived,
+A_announcement_2017-12,DCF scenario,bull,enterprise_value_incl_sky_and_investments,118866.0992,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bull,equity_value,103967.0992,USD_m,estimate,
+A_announcement_2017-12,DCF scenario,bull,equity_value_per_21cf_share,56.1663,USD_per_share,estimate,
+A_announcement_2017-12,Comparables,ev_revenue low,enterprise_value_ops,39770.8551,USD_m,derived,"low multiple 2.15x of 2 peer(s) x RemainCo revenue 18,500 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+A_announcement_2017-12,Comparables,ev_revenue low,equity_value_per_21cf_share,19.4419,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_revenue median,enterprise_value_ops,45810.4611,USD_m,derived,"median multiple 2.48x of 2 peer(s) x RemainCo revenue 18,500 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+A_announcement_2017-12,Comparables,ev_revenue median,equity_value_per_21cf_share,22.7047,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_revenue high,enterprise_value_ops,51850.0671,USD_m,derived,"high multiple 2.80x of 2 peer(s) x RemainCo revenue 18,500 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+A_announcement_2017-12,Comparables,ev_revenue high,equity_value_per_21cf_share,25.9675,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebitda low,enterprise_value_ops,35159.8998,USD_m,derived,"low multiple 8.04x of 2 peer(s) x RemainCo ebitda 4,373 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebitda low,equity_value_per_21cf_share,16.9509,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebitda median,enterprise_value_ops,35833.7866,USD_m,derived,"median multiple 8.19x of 2 peer(s) x RemainCo ebitda 4,373 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebitda median,equity_value_per_21cf_share,17.315,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebitda high,enterprise_value_ops,36507.6733,USD_m,derived,"high multiple 8.35x of 2 peer(s) x RemainCo ebitda 4,373 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebitda high,equity_value_per_21cf_share,17.679,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebit low,enterprise_value_ops,36467.8492,USD_m,derived,"low multiple 9.08x of 2 peer(s) x RemainCo ebit 4,014 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebit low,equity_value_per_21cf_share,17.6575,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebit median,enterprise_value_ops,44163.5357,USD_m,derived,"median multiple 11.00x of 2 peer(s) x RemainCo ebit 4,014 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebit median,equity_value_per_21cf_share,21.815,USD_per_share,derived,
+A_announcement_2017-12,Comparables,ev_ebit high,enterprise_value_ops,51859.2221,USD_m,derived,"high multiple 12.92x of 2 peer(s) x RemainCo ebit 4,014 (RemainCo FY2017 (Jun) derived from 21CF 10-K and the 14 Dec 2017 release; EBIT uses estimated D&A). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+A_announcement_2017-12,Comparables,ev_ebit high,equity_value_per_21cf_share,25.9724,USD_per_share,derived,
+A_announcement_2017-12,Comparables,pe,note,,,derived,P/E not applied: RemainCo net income was not public on this date; peer P/E values are shown in comparable_companies.csv
+B_proxy_2018-05,WACC,base,rf,0.0284,ratio,market,
+B_proxy_2018-05,WACC,base,erp,0.0508,ratio,market,
+B_proxy_2018-05,WACC,base,relevered_beta,1.0887,beta,derived,
+B_proxy_2018-05,WACC,base,cost_of_equity,0.0837,ratio,derived,
+B_proxy_2018-05,WACC,base,kd_pretax,0.0475,ratio,market,
+B_proxy_2018-05,WACC,base,kd_aftertax,0.037,ratio,derived,
+B_proxy_2018-05,WACC,base,weight_debt,0.3246,ratio,derived,
+B_proxy_2018-05,WACC,base,wacc,0.0686,ratio,derived,
+B_proxy_2018-05,DCF,base (Disney management forecasts),enterprise_value_ops,51448.6704,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,base (Disney management forecasts),pv_explicit_fcff,19776.3339,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,base (Disney management forecasts),pv_terminal_value,31672.3365,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,base (Disney management forecasts),terminal_value_share_of_ev,0.6156,ratio,derived,
+B_proxy_2018-05,DCF,base (Disney management forecasts),enterprise_value_incl_sky_and_investments,64072.804,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,base (Disney management forecasts),equity_value,49060.804,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,base (Disney management forecasts),equity_value_per_21cf_share,26.2196,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,Bridge,base,plus_sky_39pct_stake,12018.1336,USD_m,reported/estimate (see dcf_assumptions),
+B_proxy_2018-05,Bridge,base,plus_other_investments_book,606.0,USD_m,reported/estimate (see dcf_assumptions),
+B_proxy_2018-05,Bridge,base,less_debt,19997.0,USD_m,reported/estimate (see dcf_assumptions),
+B_proxy_2018-05,Bridge,base,plus_cash,6772.0,USD_m,reported/estimate (see dcf_assumptions),
+B_proxy_2018-05,Bridge,base,less_noncontrolling_interests,1787.0,USD_m,reported/estimate (see dcf_assumptions),
+B_proxy_2018-05,Bridge,base,rsn_treatment,0.0,USD_m,n/a,RSNs are inside enterprise_value_ops (part of the deal perimeter on this date; the DOJ divestiture remedy came on 27 Jun 2018). They are not added again; see the hindsight rows.
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),enterprise_value_ops,69168.3881,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),pv_explicit_fcff,10239.341,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),pv_terminal_value,58929.0471,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),terminal_value_share_of_ev,0.852,ratio,derived,
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),enterprise_value_incl_sky_and_investments,81792.5217,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),equity_value,66780.5217,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,alternative (21CF management forecasts to FY2022),equity_value_per_21cf_share,35.6896,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bear,enterprise_value_ops,41740.6221,USD_m,derived (management forecasts + estimates),Disney forecasts with EBITDA margin -1pp and revenue growth -1pp a year; g 1.5%
+B_proxy_2018-05,DCF scenario,bear,pv_explicit_fcff,17330.1124,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bear,pv_terminal_value,24410.5097,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bear,terminal_value_share_of_ev,0.5848,ratio,derived,
+B_proxy_2018-05,DCF scenario,bear,enterprise_value_incl_sky_and_investments,54364.7556,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bear,equity_value,39352.7556,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bear,equity_value_per_21cf_share,21.0314,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,base,enterprise_value_ops,51448.6704,USD_m,derived (management forecasts + estimates),Disney management forecasts as disclosed
+B_proxy_2018-05,DCF scenario,base,pv_explicit_fcff,19776.3339,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,base,pv_terminal_value,31672.3365,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,base,terminal_value_share_of_ev,0.6156,ratio,derived,
+B_proxy_2018-05,DCF scenario,base,enterprise_value_incl_sky_and_investments,64072.804,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,base,equity_value,49060.804,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,base,equity_value_per_21cf_share,26.2196,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bull,enterprise_value_ops,95033.7702,USD_m,derived (management forecasts + estimates),21CF management forecasts + estimated TCJA cash-tax uplift (forecasts may embed pre-reform taxes); g 2.5%
+B_proxy_2018-05,DCF scenario,bull,pv_explicit_fcff,12934.332,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bull,pv_terminal_value,82099.4382,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bull,terminal_value_share_of_ev,0.8639,ratio,derived,
+B_proxy_2018-05,DCF scenario,bull,enterprise_value_incl_sky_and_investments,107657.9038,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bull,equity_value,92645.9038,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF scenario,bull,equity_value_per_21cf_share,49.5129,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),enterprise_value_ops,64127.0721,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),pv_explicit_fcff,24633.9948,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),pv_terminal_value,39493.0773,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),terminal_value_share_of_ev,0.6159,ratio,derived,
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),enterprise_value_incl_sky_and_investments,76751.2056,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),equity_value,61739.2056,USD_m,derived (management forecasts + estimates),
+B_proxy_2018-05,DCF,sensitivity: Disney forecasts + TCJA cash-tax uplift (estimate),equity_value_per_21cf_share,32.9954,USD_per_share,derived (management forecasts + estimates),
+B_proxy_2018-05,Comparables,ev_revenue low,enterprise_value_ops,42630.6381,USD_m,derived,"low multiple 2.21x of 2 peer(s) x RemainCo revenue 19,307 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+B_proxy_2018-05,Comparables,ev_revenue low,equity_value_per_21cf_share,21.507,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_revenue median,enterprise_value_ops,43657.3821,USD_m,derived,"median multiple 2.26x of 2 peer(s) x RemainCo revenue 19,307 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+B_proxy_2018-05,Comparables,ev_revenue median,equity_value_per_21cf_share,22.0557,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_revenue high,enterprise_value_ops,44684.126,USD_m,derived,"high multiple 2.31x of 2 peer(s) x RemainCo revenue 19,307 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded from ranges: high-growth streaming model priced on subscriber growth, not on current revenue or earnings; shown for reference"
+B_proxy_2018-05,Comparables,ev_revenue high,equity_value_per_21cf_share,22.6045,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebitda low,enterprise_value_ops,29001.5509,USD_m,derived,"low multiple 7.05x of 2 peer(s) x RemainCo ebitda 4,116 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebitda low,equity_value_per_21cf_share,14.2232,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebitda median,enterprise_value_ops,30243.085,USD_m,derived,"median multiple 7.35x of 2 peer(s) x RemainCo ebitda 4,116 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebitda median,equity_value_per_21cf_share,14.8867,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebitda high,enterprise_value_ops,31484.6191,USD_m,derived,"high multiple 7.65x of 2 peer(s) x RemainCo ebitda 4,116 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebitda high,equity_value_per_21cf_share,15.5502,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebit low,enterprise_value_ops,30826.5701,USD_m,derived,"low multiple 8.62x of 2 peer(s) x RemainCo ebit 3,578 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebit low,equity_value_per_21cf_share,15.1985,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebit median,enterprise_value_ops,35264.1572,USD_m,derived,"median multiple 9.86x of 2 peer(s) x RemainCo ebit 3,578 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebit median,equity_value_per_21cf_share,17.5701,USD_per_share,derived,
+B_proxy_2018-05,Comparables,ev_ebit high,enterprise_value_ops,39701.7442,USD_m,derived,"high multiple 11.10x of 2 peer(s) x RemainCo ebit 3,578 (RemainCo pro forma FY2017 (Jun), May 2018 proxy p.223 (stale by ~11 months; no LTM to Mar 2018 is disclosed)). Excluded: NFLX: excluded: content amortization sits in cost of revenues, so EBITDA/EBIT are not comparable"
+B_proxy_2018-05,Comparables,ev_ebit high,equity_value_per_21cf_share,19.9417,USD_per_share,derived,
+B_proxy_2018-05,Comparables,pe,note,,,not_available,P/E not applied: peer LTM earnings include TCJA deferred-tax remeasurements; peer P/E values are shown in comparable_companies.csv
+B_proxy_2018-05,Reference: Disney advisors' CY2018E EBITDA range,"8.00x x Disney FY2018E EBITDA 4,506",enterprise_value_ops,36048.0,USD_m,derived,"JPROXY_ORIG_20180530 p.149. FY2018E (Jun) EBITDA used as a proxy for CY2018E: a mismatch noted, not adjusted."
+B_proxy_2018-05,Reference: Disney advisors' CY2018E EBITDA range,"9.00x x Disney FY2018E EBITDA 4,506",enterprise_value_ops,40554.0,USD_m,derived,"JPROXY_ORIG_20180530 p.149. FY2018E (Jun) EBITDA used as a proxy for CY2018E: a mismatch noted, not adjusted."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2018E:change,38.0,USD_m,derived,"June 2018 proxy 20,155 vs May 2018 proxy 20,117. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2019E:change,34.0,USD_m,derived,"June 2018 proxy 22,624 vs May 2018 proxy 22,590. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2020E:change,-79.0,USD_m,derived,"June 2018 proxy 22,383 vs May 2018 proxy 22,462. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2021E:change,-209.0,USD_m,derived,"June 2018 proxy 22,279 vs May 2018 proxy 22,488. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2022E:change,504.0,USD_m,derived,"June 2018 proxy 22,839 vs May 2018 proxy 22,335. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2023E:change,-231.0,USD_m,derived,"June 2018 proxy 22,692 vs May 2018 proxy 22,923. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2024E:change,-54.0,USD_m,derived,"June 2018 proxy 23,175 vs May 2018 proxy 23,229. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2025E:change,-378.0,USD_m,derived,"June 2018 proxy 24,006 vs May 2018 proxy 24,384. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2026E:change,-914.0,USD_m,derived,"June 2018 proxy 25,226 vs May 2018 proxy 26,140. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2027E:change,2109.0,USD_m,derived,"June 2018 proxy 27,516 vs May 2018 proxy 25,407. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,revenue:2028E:change,56.0,USD_m,derived,"June 2018 proxy 26,294 vs May 2018 proxy 26,238. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2018E:change,-42.0,USD_m,derived,"June 2018 proxy 4,464 vs May 2018 proxy 4,506. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2019E:change,-383.0,USD_m,derived,"June 2018 proxy 4,464 vs May 2018 proxy 4,847. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2020E:change,-505.0,USD_m,derived,"June 2018 proxy 4,633 vs May 2018 proxy 5,138. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2021E:change,49.0,USD_m,derived,"June 2018 proxy 5,397 vs May 2018 proxy 5,348. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2022E:change,424.0,USD_m,derived,"June 2018 proxy 5,133 vs May 2018 proxy 4,709. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2023E:change,-173.0,USD_m,derived,"June 2018 proxy 4,977 vs May 2018 proxy 5,150. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2024E:change,-1.0,USD_m,derived,"June 2018 proxy 5,194 vs May 2018 proxy 5,195. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2025E:change,118.0,USD_m,derived,"June 2018 proxy 5,362 vs May 2018 proxy 5,244. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2026E:change,-132.0,USD_m,derived,"June 2018 proxy 5,416 vs May 2018 proxy 5,548. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2027E:change,374.0,USD_m,derived,"June 2018 proxy 5,904 vs May 2018 proxy 5,530. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,ebitda:2028E:change,44.0,USD_m,derived,"June 2018 proxy 5,763 vs May 2018 proxy 5,719. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2018E:change,333.0,USD_m,derived,"June 2018 proxy 1,979 vs May 2018 proxy 1,646. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2019E:change,292.0,USD_m,derived,"June 2018 proxy 1,561 vs May 2018 proxy 1,269. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2020E:change,321.0,USD_m,derived,"June 2018 proxy 3,569 vs May 2018 proxy 3,248. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2021E:change,781.0,USD_m,derived,"June 2018 proxy 4,024 vs May 2018 proxy 3,243. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2022E:change,398.0,USD_m,derived,"June 2018 proxy 3,329 vs May 2018 proxy 2,931. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2023E:change,1002.0,USD_m,derived,"June 2018 proxy 3,696 vs May 2018 proxy 2,694. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2024E:change,502.0,USD_m,derived,"June 2018 proxy 3,417 vs May 2018 proxy 2,915. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2025E:change,953.0,USD_m,derived,"June 2018 proxy 3,292 vs May 2018 proxy 2,339. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2026E:change,944.0,USD_m,derived,"June 2018 proxy 3,046 vs May 2018 proxy 2,102. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2027E:change,-1173.0,USD_m,derived,"June 2018 proxy 2,659 vs May 2018 proxy 3,832. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),disney_for_remainco_updated vs disney_for_remainco_original,unlevered_fcf:2028E:change,649.0,USD_m,derived,"June 2018 proxy 3,479 vs May 2018 proxy 2,830. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,revenue:2018F:change,447.0,USD_m,derived,"June 2018 proxy 20,868 vs May 2018 proxy 20,421. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,revenue:2019E:change,-1319.0,USD_m,derived,"June 2018 proxy 21,766 vs May 2018 proxy 23,085. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,revenue:2020E:change,-598.0,USD_m,derived,"June 2018 proxy 23,321 vs May 2018 proxy 23,919. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,revenue:2021E:change,10.0,USD_m,derived,"June 2018 proxy 26,454 vs May 2018 proxy 26,444. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,revenue:2022E:change,-1146.0,USD_m,derived,"June 2018 proxy 28,208 vs May 2018 proxy 29,354. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,ebitda:2018F:change,-151.0,USD_m,derived,"June 2018 proxy 4,336 vs May 2018 proxy 4,487. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,ebitda:2019E:change,-403.0,USD_m,derived,"June 2018 proxy 4,473 vs May 2018 proxy 4,876. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,ebitda:2020E:change,-645.0,USD_m,derived,"June 2018 proxy 4,981 vs May 2018 proxy 5,626. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,ebitda:2021E:change,-608.0,USD_m,derived,"June 2018 proxy 5,698 vs May 2018 proxy 6,306. Subsequent to the B valuation date."
+subsequent_info_2018-06,Forecast revision (not valued),21cf_to_advisors_updated vs 21cf_to_advisor_original,ebitda:2022E:change,-945.0,USD_m,derived,"June 2018 proxy 6,047 vs May 2018 proxy 6,992. Subsequent to the B valuation date."
+hindsight,Hindsight (subsequent information),A_announcement_2017-12,enterprise_value_ops_less_rsn_sale_price,46602.9152,USD_m,derived,"Illustrative only: the DCF EV includes the RSNs; subtracting their Aug 2019 sale price (~$11bn, transaction_assumptions P20 (DIS_10K_FY2019 p.98)) shows the value of the perimeter Disney kept, assuming the DCF valued the RSNs at their sale price. No RSN forecasts were disclosed, so their DCF value is unknown."
+hindsight,Hindsight (subsequent information),A_announcement_2017-12,sky_stake_estimate_vs_actual_sale,4710.7683,USD_m,derived,"Actual Oct 2018 sale proceeds for the 39% Sky stake (transaction_assumptions X03 (DIS_8KA_20190327_EX99_4 p.1)) minus the bridge estimate 10,389"
+hindsight,Hindsight (subsequent information),B_proxy_2018-05,enterprise_value_ops_less_rsn_sale_price,40448.6704,USD_m,derived,"Illustrative only: the DCF EV includes the RSNs; subtracting their Aug 2019 sale price (~$11bn, transaction_assumptions P20 (DIS_10K_FY2019 p.98)) shows the value of the perimeter Disney kept, assuming the DCF valued the RSNs at their sale price. No RSN forecasts were disclosed, so their DCF value is unknown."
+hindsight,Hindsight (subsequent information),B_proxy_2018-05,sky_stake_estimate_vs_actual_sale,3081.8664,USD_m,derived,"Actual Oct 2018 sale proceeds for the 39% Sky stake (transaction_assumptions X03 (DIS_8KA_20190327_EX99_4 p.1)) minus the bridge estimate 12,018"
+hindsight,Hindsight (subsequent information),Hulu,hulu_30pct_fair_value_reference,4737.0,USD_m,reported,"Fair value of Disney's own previously held 30% Hulu interest at closing (transaction_assumptions P1D (DIS_10K_FY2019 p.96)); 21CF's 30% stake sits at book in both bridges, so equity values understate this asset by roughly this order of magnitude"
+transaction,Unaffected price,2017-11-03,21cf_unaffected_price_weighted,24.7371,USD_per_share,derived,"FOXA 24.97 / FOX 24.43, weighted by class share counts (JPROXY_ORIG_20180530 p.56 closing-price table; class weights from 21CF FY2017 10-K cover share counts)"
+transaction,Unaffected price,2017-12-13,21cf_price_pre_announcement_weighted,32.5731,USD_per_share,derived,Affected by press reports from 6 Nov 2017; not used for premiums
+transaction,original_2017_12,terms,per_share_value_at_102_reference,27.999,USD_per_share,derived,transaction_assumptions O02 x transaction_assumptions O08
+transaction,original_2017_12,terms,per_share_value_at_2017-12-13_close,29.5389,USD_per_share,derived,transaction_assumptions O02 x Disney close 107.61
+transaction,original_2017_12,premium,premium_consideration_only_at_102_reference,0.1319,ratio,derived,vs weighted unaffected 21CF price (3 Nov 2017). Understates the premium because holders also kept New Fox.
+transaction,original_2017_12,premium,premium_consideration_only_at_2017-12-13_close,0.1941,ratio,derived,vs weighted unaffected 21CF price (3 Nov 2017). Understates the premium because holders also kept New Fox.
+transaction,original_2017_12,values,equity_value_headline,52400.0,USD_m,reported,transaction_assumptions O03
+transaction,original_2017_12,values,enterprise_value_headline,66100.0,USD_m,reported,transaction_assumptions O05 (= equity + ~$13.7bn net debt assumed)
+transaction,original_2017_12,values,market_implied_equity_value_2017-12-13,55271.7153,USD_m,derived,"29.54 x 1,871.147m fully diluted shares (transaction_assumptions O12)"
+transaction,original_2017_12,values,cash_consideration,0.0,USD_m,reported,all-stock offer
+transaction,original_2017_12,implied multiple,headline_ev_less_sky_and_investments,54983.7683,USD_m,estimate,"headline transaction value - Sky stake estimate 10,389 - other investments 727"
+transaction,amended_2018_06,terms,per_share_value,38.0,USD_per_share,reported,transaction_assumptions A02 (inside the collar)
+transaction,amended_2018_06,premium,premium_consideration_only,0.5362,ratio,derived,"vs weighted unaffected price (3 Nov 2017); excludes New Fox, so understated"
+transaction,amended_2018_06,values,equity_value_headline,71300.0,USD_m,reported,transaction_assumptions A07
+transaction,amended_2018_06,values,enterprise_value_headline,85100.0,USD_m,reported,transaction_assumptions A09 (= equity + ~$13.8bn net debt)
+transaction,amended_2018_06,values,cash_consideration,35700.0,USD_m,reported,transaction_assumptions A04
+transaction,amended_2018_06,values,stock_consideration_at_103.926_reference,35600.0,USD_m,derived,headline equity - cash
+transaction,amended_2018_06,implied multiple,headline_ev_less_sky_and_investments,72475.8664,USD_m,estimate,"headline transaction value - Sky stake (B estimate at Comcast's £12.50) 12,018 - other investments 606"
+transaction,closing_2019_03,terms,disney_consideration_per_original_21cf_share,37.9996,USD_per_share,derived,"transaction_assumptions C08 x 0.736817 (share remaining after the distribution, FOX_8K_20190318_EX99_1)"
+transaction,closing_2019_03,terms,fox_corporation_shares_per_original_21cf_share,0.3333,shares,reported,0.263183 of each 21CF share exchanged for 1/3 Fox Corporation share (FOX_8K_20190318_EX99_1)
+transaction,closing_2019_03,terms,fox_corporation_value_per_original_21cf_share,13.4467,USD_per_share,derived,1/3 x FOXA first close 40.34 on 2019-03-19 (Yahoo Finance). Class A price used for both classes (approximation).
+transaction,closing_2019_03,premium,package_value_per_original_21cf_share,51.4463,USD_per_share,derived,Disney consideration + Fox Corporation shares
+transaction,closing_2019_03,premium,premium_package_nominal,1.0797,ratio,derived,Nominal premium over the 3 Nov 2017 unaffected price. Not adjusted for market movement over 16 months.
+transaction,closing_2019_03,premium,premium_disney_consideration_only,0.5361,ratio,derived,excludes Fox Corporation shares
+transaction,closing_2019_03,values,market_implied_equity_value,71000.0,USD_m,reported,transaction_assumptions C11 (stock at the $114.1801 average price)
+transaction,closing_2019_03,values,cash_consideration,35700.0,USD_m,reported,transaction_assumptions C12
+transaction,closing_2019_03,values,stock_consideration_implied,35000.0,USD_m,reported,transaction_assumptions C13
+transaction,closing_2019_03,values,enterprise_value_headline,71000.0,USD_m,reported,transaction_assumptions C21
+transaction,closing_2019_03,values,enterprise_value_derived,70400.0,USD_m,derived,"market-implied equity 71,000 + debt assumed 19,200 - cash acquired 19,800 (release figures, rounded)"
+transaction,closing_2019_03,values,accounting_purchase_price,69507.0,USD_m,reported,transaction_assumptions P01 (ASC 805; stock at $110.00)
+transaction,closing_2019_03,values,accounting_vs_market_implied_gap,1493.0,USD_m,derived,mainly $114.18 vs $110.00 share price
+transaction,original_2017_12,implied multiple,ev_ops_to_remainco_fy2017_ebitda_estimate,12.5735,x,estimate,"EV of operations / RemainCo FY2017 EBITDA derived from public Dec 2017 information (4,373)"
+transaction,amended_2018_06,implied multiple,ev_ops_to_remainco_fy2017_pro_forma_ebitda,17.6083,x,estimate,"EV of operations / RemainCo FY2017 pro forma EBITDA before D&A and impairment (4,116; May 2018 proxy p.223)"
+transaction,amended_2018_06,implied multiple,ev_ops_to_disney_fy2018e_ebitda,16.0843,x,estimate,"EV of operations / Disney management FY2018E EBITDA (4,506; May 2018 proxy p.129)"
+transaction,closing_2019_03,implied multiple,ev_derived_to_remainco_fy2018_ebitda,16.8865,x,derived,"Closing EV (derived) / RemainCo FY2018 EBITDA 4,169 (financial_ratios.csv; 8-K/A closing perimeter). Sky was already sold, and its proceeds are in the cash acquired."

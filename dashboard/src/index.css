@@ -4,10 +4,13 @@
   --color-paper: #F7F4EE;
   --color-card: #FCFAF6;
   --color-ink: #14202E;
+  --color-ink-2: #0E1824;
   --color-navy: #1F3A5F;
   --color-muted: #5B6472;
   --color-rule: #E3DDD1;
   --color-brass: #9A7B4F;
+  --color-brass-light: #D4B98C;
+  --color-pos: #12845b;
   --color-s1: #2a78d6;
   --color-s2: #eb6834;
   --color-s3: #1baf7a;
@@ -20,10 +23,49 @@
 html { scroll-behavior: smooth; }
 body { @apply bg-paper text-ink font-sans antialiased; font-feature-settings: "tnum" 1, "lnum" 1; }
 .num { font-variant-numeric: tabular-nums lining-nums; }
-input[type="range"] { accent-color: var(--color-navy); }
 ::selection { background: #1F3A5F22; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
 /* grid items must be allowed to shrink below their content width (wide tables scroll inside) */
 .grid > * { min-width: 0; }
 html, body { overflow-x: clip; }
+
+:focus-visible { outline: 2px solid var(--color-navy); outline-offset: 2px; border-radius: 2px; }
+
+/* ---------------------------------------------------------------- scroll reveal */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.7s cubic-bezier(0.2, 0.7, 0.2, 1), transform 0.7s cubic-bezier(0.2, 0.7, 0.2, 1); }
+.reveal.is-in { opacity: 1; transform: none; }
+
+/* ---------------------------------------------------------------- panels: quiet hover lift */
+.panel { transition: box-shadow 0.25s ease, border-color 0.25s ease; }
+.panel:hover { box-shadow: 0 10px 30px -18px rgba(20, 32, 46, 0.28); border-color: #d9d1c2; }
+
+/* ---------------------------------------------------------------- expandable technical notes */
+details.tech > summary::-webkit-details-marker { display: none; }
+details.tech[open] .details-body { animation: open-down 0.35s ease-out; }
+@keyframes open-down { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* ---------------------------------------------------------------- range inputs */
+input[type="range"].rng { -webkit-appearance: none; appearance: none; height: 4px; border-radius: 999px; cursor: pointer;
+  background: linear-gradient(to right, var(--color-navy) var(--fill), var(--color-rule) var(--fill)); }
+input[type="range"].rng::-webkit-slider-thumb { -webkit-appearance: none; width: 18px; height: 18px; border-radius: 50%; background: var(--color-card);
+  border: 2px solid var(--color-navy); box-shadow: 0 1px 4px rgba(20, 32, 46, 0.25); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+input[type="range"].rng::-moz-range-thumb { width: 14px; height: 14px; border-radius: 50%; background: var(--color-card); border: 2px solid var(--color-navy);
+  box-shadow: 0 1px 4px rgba(20, 32, 46, 0.25); transition: transform 0.15s ease; }
+input[type="range"].rng:hover::-webkit-slider-thumb, input[type="range"].rng:active::-webkit-slider-thumb { transform: scale(1.15); box-shadow: 0 0 0 6px rgba(31, 58, 95, 0.12); }
+input[type="range"].rng:hover::-moz-range-thumb { transform: scale(1.15); }
+
+/* ---------------------------------------------------------------- hero texture */
+.hero-grid { background-image: linear-gradient(rgba(247, 244, 238, 0.045) 1px, transparent 1px), linear-gradient(90deg, rgba(247, 244, 238, 0.045) 1px, transparent 1px);
+  background-size: 56px 56px; mask-image: radial-gradient(ellipse at 70% 30%, black 20%, transparent 75%); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  details.tech[open] .details-body { animation: none; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+@media print {
+  .reveal { opacity: 1; transform: none; }
+  header { position: static !important; }
+}

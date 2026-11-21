@@ -1,70 +1,81 @@
 import { useEffect, useState } from "react";
 import { useDashboard } from "./lib/data";
-import Overview from "./sections/Overview";
-import Historical from "./sections/Historical";
+import DealOverview from "./sections/DealOverview";
 import Valuation from "./sections/Valuation";
-import Premium from "./sections/Premium";
-import Synergy from "./sections/Synergy";
-import Accretion from "./sections/Accretion";
-import Options from "./sections/Options";
-import MonteCarlo from "./sections/MonteCarlo";
-import Methodology from "./sections/Methodology";
+import SynergiesEps from "./sections/SynergiesEps";
+import RiskOptions from "./sections/RiskOptions";
+import Conclusion from "./sections/Conclusion";
 
 const NAV = [
-  ["overview", "Overview"], ["historical", "Historical"], ["valuation", "Valuation"], ["premium", "Premium & bridge"],
-  ["synergies", "Synergies"], ["eps", "EPS impact"], ["options", "Real options"], ["montecarlo", "Monte Carlo"], ["method", "Method & sources"],
+  ["deal", "Deal Overview"], ["valuation", "Valuation"], ["synergies", "Synergies & EPS"], ["risk", "Risk & Real Options"], ["verdict", "Conclusion"],
 ] as const;
 
 export default function App() {
   const { data, error } = useDashboard();
-  const [active, setActive] = useState("overview");
+  const [active, setActive] = useState("");
+  const [progress, setProgress] = useState(0);
   useEffect(() => {
     if (!data) return;
-    const obs = new IntersectionObserver((es) => es.forEach((e) => e.isIntersecting && setActive(e.target.id)), { rootMargin: "-40% 0px -55% 0px" });
+    const obs = new IntersectionObserver((es) => es.forEach((e) => e.isIntersecting && setActive(e.target.id)), { rootMargin: "-35% 0px -60% 0px" });
     NAV.forEach(([id]) => { const el = document.getElementById(id); if (el) obs.observe(el); });
-    return () => obs.disconnect();
+    const top = document.getElementById("top");
+    const heroObs = top ? new IntersectionObserver(([e]) => e.isIntersecting && setActive(""), { rootMargin: "0px 0px -70% 0px" }) : null;
+    if (top) heroObs!.observe(top);
+    let raf = 0;
+    const onScroll = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(() => {
+      const h = document.documentElement; setProgress(Math.min(1, h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight)));
+    }); };
+    window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+    return () => { obs.disconnect(); heroObs?.disconnect(); window.removeEventListener("scroll", onScroll); cancelAnimationFrame(raf); };
   }, [data]);
 
   return (
     <div className="min-h-screen">
-      <header className="sticky top-0 z-30 border-b border-rule bg-paper/95 backdrop-blur">
+      <header className="sticky top-0 z-30 border-b border-rule bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-[1180px] items-center justify-between gap-4 px-5 py-3 md:px-8">
-          <a href="#overview" className="flex items-baseline gap-3">
+          <a href="#top" className="flex items-baseline gap-3">
             <span className="font-serif text-lg font-semibold text-ink">Disney × 21st Century Fox</span>
-            <span className="hidden text-xs uppercase tracking-[0.16em] text-muted sm:inline">M&amp;A valuation</span>
+            <span className="hidden text-[11px] uppercase tracking-[0.16em] text-muted sm:inline">M&amp;A case study</span>
           </a>
           <a href={data?.meta.repo ?? "https://github.com/jayden0100bit/M-A-real-options-valuation"} target="_blank" rel="noreferrer"
             className="text-xs font-medium text-navy underline-offset-4 hover:underline">Source code ↗</a>
         </div>
         <nav aria-label="Sections" className="mx-auto max-w-[1180px] overflow-x-auto px-5 md:px-8">
-          <ul className="flex gap-5 whitespace-nowrap pb-2 text-[13px]">
-            {NAV.map(([id, label]) => (
+          <ul className="flex gap-1 whitespace-nowrap pb-2 text-[13px]">
+            {NAV.map(([id, label], i) => (
               <li key={id}>
-                <a href={`#${id}`} className={`border-b-2 pb-1.5 transition-colors ${active === id ? "border-navy text-ink" : "border-transparent text-muted hover:text-ink"}`}>{label}</a>
+                <a href={`#${id}`} aria-current={active === id ? "true" : undefined}
+                  className={`flex items-center gap-2 rounded-[3px] px-3 py-1.5 transition-all duration-200 ${active === id ? "bg-navy text-card" : "text-muted hover:bg-card hover:text-ink"}`}>
+                  <span className={`num font-mono text-[11px] ${active === id ? "text-brass-light" : "text-brass"}`}>0{i + 1}</span>{label}
+                </a>
               </li>
             ))}
           </ul>
         </nav>
+        <div className="absolute bottom-0 left-0 h-[2px] bg-brass transition-[width] duration-150" style={{ width: `${progress * 100}%` }} aria-hidden />
       </header>
-      <main className="mx-auto max-w-[1180px] px-5 md:px-8">
+      <main>
         {error && <p className="py-24 text-center text-s2">Could not load the data bundle ({error}).</p>}
-        {!data && !error && <p className="py-24 text-center text-muted">Loading verified pipeline outputs…</p>}
+        {!data && !error && (
+          <div className="flex flex-col items-center gap-3 py-32 text-muted">
+            <span className="h-6 w-6 animate-spin rounded-full border-2 border-rule border-t-navy" />
+            <p className="text-sm">Loading verified pipeline outputs…</p>
+          </div>
+        )}
         {data && (
           <>
-            <Overview d={data} />
-            <Historical d={data} />
-            <Valuation d={data} />
-            <Premium d={data} />
-            <Synergy d={data} />
-            <Accretion d={data} />
-            <Options d={data} />
-            <MonteCarlo d={data} />
-            <Methodology d={data} />
+            <DealOverview d={data} />
+            <div className="mx-auto max-w-[1180px] px-5 md:px-8">
+              <Valuation d={data} />
+              <SynergiesEps d={data} />
+              <RiskOptions d={data} />
+              <Conclusion d={data} />
+            </div>
           </>
         )}
       </main>
-      <footer className="border-t border-rule">
-        <div className="mx-auto max-w-[1180px] px-5 py-8 text-xs leading-relaxed text-muted md:px-8">
+      <footer className="border-t border-rule bg-card">
+        <div className="mx-auto max-w-[1180px] px-5 py-10 text-xs leading-relaxed text-muted md:px-8">
           Built by Joshua Jayden from SEC filings and dated market data. An analytical case study, not investment advice or a fairness opinion.
           All figures are generated by the project's Python pipeline; values recalculated in the browser use the same formulas.
         </div>

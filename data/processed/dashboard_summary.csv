@@ -1,0 +1,15 @@
+section,metric,value,unit,value_type,source
+Deal,"21CF unaffected price (3 Nov 2017, class-weighted)",24.7371,USD_per_share,derived,valuation_outputs.csv
+Deal,ASC 805 purchase price,69507.0,USD_m,reported,DIS_10K_FY2019 p.96
+Deal,Original (Dec 2017) equity value (headline),52400.0,USD_m,reported,transaction_assumptions.csv
+Deal,Amended (Jun 2018) equity value (headline),71300.0,USD_m,reported,transaction_assumptions.csv
+Deal,Closing (Mar 2019) equity value (headline),71000.0,USD_m,reported,transaction_assumptions.csv
+Valuation,A_announcement_2017-12 DCF equity value per 21CF share,29.0753,USD_per_share,estimate,valuation_outputs.csv
+Valuation,A_announcement_2017-12 WACC,0.0604,ratio,derived,valuation_outputs.csv
+Valuation,B_proxy_2018-05 DCF equity value per 21CF share,26.2196,USD_per_share,estimate,valuation_outputs.csv
+Valuation,B_proxy_2018-05 WACC,0.0686,ratio,derived,valuation_outputs.csv
+Synergies,A_announcement_2017-12 base net synergy value,20782.962637,USD_m,estimate,synergy_outputs.csv
+Synergies,B_proxy_2018-05 base net synergy value,21946.682065,USD_m,estimate,synergy_outputs.csv
+Accretion/dilution,FY2021 adjusted EPS accretion (base),-0.014446,ratio,estimate,accretion_dilution_outputs.csv
+Real options,Revenue-synergy expansion option (Black-Scholes),2389.360818,USD_m,estimate,real_options_outputs.csv
+Monte Carlo,P(value created > 0) vs amended $38 offer,0.3349,ratio,estimate,monte_carlo_summary.csv

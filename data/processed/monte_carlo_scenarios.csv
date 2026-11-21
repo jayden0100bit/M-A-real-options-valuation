@@ -1,0 +1,7 @@
+source,net_synergy_value,value_created_vs_38
+Stage 4 deterministic bear (standalone base),12893.603603,-9148.763787465447
+Stage 4 deterministic base (standalone base),21946.682065,-95.68532546544157
+Stage 4 deterministic bull (standalone base),33721.027583,11678.66019253456
+Monte Carlo p05,12602.164254959842,-13357.083231786228
+Monte Carlo p50,19374.61098505449,-2892.8801043754647
+Monte Carlo p95,24681.926128119172,8563.489522203925

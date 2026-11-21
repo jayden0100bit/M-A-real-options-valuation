@@ -1,0 +1,3629 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:x="urn:schemas-microsoft-com:office:excel"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=macintosh">
+<meta name=ProgId content=Excel.Sheet>
+<meta name=Generator content="Microsoft Excel 15">
+<link rel=File-List href="histimpl.fld/filelist.xml">
+<style>
+<!--table
+	{mso-displayed-decimal-separator:"\.";
+	mso-displayed-thousand-separator:"\,";}
+@page
+	{margin:.75in .7in .75in .7in;
+	mso-header-margin:.3in;
+	mso-footer-margin:.3in;}
+.style0
+	{mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	white-space:nowrap;
+	mso-rotate:0;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	border:none;
+	mso-protection:locked visible;
+	mso-style-name:Normal;
+	mso-style-id:0;}
+.style20
+	{mso-number-format:0%;
+	mso-style-name:Percent;
+	mso-style-id:5;}
+td
+	{mso-style-parent:style0;
+	padding-top:1px;
+	padding-right:1px;
+	padding-left:1px;
+	mso-ignore:padding;
+	color:black;
+	font-size:12.0pt;
+	font-weight:400;
+	font-style:normal;
+	text-decoration:none;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:General;
+	text-align:general;
+	vertical-align:bottom;
+	border:none;
+	mso-background-source:auto;
+	mso-pattern:auto;
+	mso-protection:locked visible;
+	white-space:nowrap;
+	mso-rotate:0;}
+.xl65
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl66
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.xl67
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl68
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl69
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl70
+	{mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl71
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl72
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl73
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl74
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;}
+.xl75
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl76
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.xl77
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl78
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl79
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl80
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl81
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl82
+	{mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl83
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl84
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl85
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl86
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl87
+	{mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl88
+	{mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl651 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl661 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.xl671 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl681 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl691 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl701 {mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl711 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl721 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl731 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl741 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;}
+.xl751 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl761 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Times;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;}
+.xl771 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl781 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl791 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-weight:700;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl801 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl811 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl821 {mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl831 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl841 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl851 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl861 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl871 {mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl881 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl652 {mso-style-parent:style60;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl662 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl672 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl682 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl692 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl702 {mso-style-parent:style60;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl712 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl722 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl732 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl742 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl752 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl762 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl772 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl782 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl792 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl802 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl812 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl822 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl832 {mso-style-parent:style0;
+	font-family:Calibri;
+	mso-generic-font-family:auto;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl653 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl663 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl673 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl683 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl693 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl703 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl713 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl723 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl733 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl743 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl753 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl763 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl773 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl783 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl793 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl803 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl813 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl823 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl833 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl842 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl852 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl862 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl872 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl882 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl63 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl64 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl654 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	font-style:italic;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl664 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl674 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl684 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl694 {mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl704 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl714 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl724 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl734 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl744 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl754 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl764 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl774 {mso-style-parent:style20;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl784 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;}
+.xl794 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl804 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl814 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl824 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl834 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl843 {mso-style-parent:style0;
+	color:windowtext;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;}
+.xl655 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl665 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl675 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl685 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl695 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl705 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl715 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl725 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl735 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl745 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl755 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl765 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl775 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl785 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl795 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl805 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl815 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl825 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl835 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl844 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl853 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl863 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl873 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl883 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl89 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl90 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl91 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl92 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl93 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl94 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;}
+.xl656 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl666 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl676 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl686 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl696 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl706 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl716 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl726 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl736 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl746 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl756 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl766 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl776 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl786 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl796 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl806 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl816 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl826 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl836 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl845 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl854 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl864 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl874 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl884 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl891 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl657 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl667 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl677 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl687 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl697 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl707 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl717 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl727 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl737 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl747 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl757 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl767 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl777 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl787 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl797 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl807 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl817 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl827 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl837 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl846 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl855 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl865 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl875 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl885 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl892 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl901 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl911 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl921 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl931 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl941 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl95 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl658 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl668 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl678 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl688 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl698 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl708 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl718 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl728 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl738 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl748 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl758 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl768 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl778 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl788 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl798 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl808 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl818 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl828 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl838 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl847 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl856 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl866 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl876 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl886 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl893 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl902 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl912 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl922 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl932 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl942 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl659 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl669 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl679 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl689 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl699 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl709 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl719 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl729 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl739 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl749 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl759 {mso-style-parent:style60;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl769 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl779 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl789 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl799 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl809 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl819 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl829 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl839 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl848 {mso-style-parent:style60;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl857 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl867 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl877 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl887 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl894 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl6510 {mso-style-parent:style0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl6610 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	text-align:center;}
+.xl6710 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl6810 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Times, serif;
+	mso-font-charset:0;}
+.xl6910 {mso-style-parent:style0;
+	font-family:Times, serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl7010 {mso-style-parent:style17;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7110 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7210 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7310 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7410 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7510 {mso-style-parent:style17;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7610 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7710 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7810 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7910 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl8010 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl8110 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl8210 {mso-style-parent:style0;
+	font-weight:700;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8310 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl849 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl858 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl868 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl878 {mso-style-parent:style17;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl888 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl895 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border-top:none;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;
+	white-space:normal;}
+.xl903 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	vertical-align:middle;
+	border-top:none;
+	border-right:none;
+	border-bottom:.5pt solid windowtext;
+	border-left:.5pt solid windowtext;}
+.xl913 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl923 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl933 {mso-style-parent:style0;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl943 {mso-style-parent:style0;
+	font-style:italic;
+	font-family:Calibri, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl631 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl641 {mso-style-parent:style20;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl6511 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl6611 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	white-space:normal;}
+.xl6711 {mso-style-parent:style0;
+	font-size:10.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl6811 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl6911 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7011 {mso-style-parent:style20;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7111 {mso-style-parent:style0;
+	font-size:10.0pt;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7211 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7311 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7411 {mso-style-parent:style20;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7511 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7611 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7711 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7811 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7911 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8011 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8111 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl8211 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl8311 {mso-style-parent:style20;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8410 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;}
+.xl859 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl869 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl879 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl889 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl896 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl904 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl914 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl924 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl934 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl944 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl951 {mso-style-parent:style0;
+	font-size:10.0pt;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl6512 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl6612 {mso-style-parent:style20;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl6712 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-weight:700;
+	font-style:italic;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl6812 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl6912 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7012 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7112 {mso-style-parent:style20;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7212 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7312 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7412 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7512 {mso-style-parent:style20;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7612 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;}
+.xl7712 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	vertical-align:middle;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl7812 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl7912 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8012 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8112 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl8212 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl8312 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl8411 {mso-style-parent:style20;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border:.5pt solid windowtext;}
+.xl8510 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;}
+.xl8610 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;}
+.xl8710 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;}
+.xl8810 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl897 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl905 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;
+	background:#D9D9D9;
+	mso-pattern:#D9D9D9 none;}
+.xl915 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl925 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl935 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl945 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-style:italic;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:none;
+	border-left:.5pt solid windowtext;}
+.xl952 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:0;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;}
+.xl96 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Percent;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;}
+.xl97 {mso-style-parent:style0;
+	font-size:10.0pt;
+	font-family:Verdana, sans-serif;
+	mso-font-charset:0;
+	mso-number-format:Fixed;
+	text-align:center;
+	border-top:.5pt solid windowtext;
+	border-right:.5pt solid windowtext;
+	border-bottom:.5pt solid black;
+	border-left:.5pt solid windowtext;}
+-->
+</style>
+</head>
+
+<body link="#0563C1" vlink="#954F72">
+<div align="left">
+  <h1><a href="../home.htm"><img src="../Budimage/titlesm.gif" alt="smal" width="54" height="54" border="0"></a>Historical 
+    Implied Equity Risk Premiums</h1>
+  <p><b>Data Used</b>: Multiple data services</p>
+  <p><b>Data</b>: Historical Implied Equity Risk Premiums for the US (<a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3378246">See my paper on equity risk premiums for details</a>)</p>
+  <p><strong>Date</strong>: January 2026</p>
+  <p><strong>Download as an excel file instead</strong>: <a href="https://www.stern.nyu.edu/~adamodar/pc/datasets/histimpl.xls">https://www.stern.nyu.edu/~adamodar/pc/datasets/histimpl.xls</a></p>
+</div>
+<p>
+  <!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+  <!--The following information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+  <!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+  <!----------------------------->
+  <!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
+  <!----------------------------->
+
+  <!--[if !excel]>&nbsp;&nbsp;<![endif]-->
+  <!--The following information was generated by Microsoft Excel's Publish as Web
+Page wizard.-->
+  <!--If the same item is republished from Excel, all information between the DIV
+tags will be replaced.-->
+  <!----------------------------->
+  <!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD --></p>
+<table border=0 cellpadding=0 cellspacing=0 style='border-collapse:
+ collapse;table-layout:fixed;width:585pt'>
+  <col width=87 span=9 style='width:65pt'>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6512 style='height:16.0pt;width:65pt'><pre><strong>Year</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>Earnings 
+Yield</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>Dividend 
+Yield</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>S&amp;P 500</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>Earnings*</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>Dividends*</strong></pre></td>
+    <td class=xl6512 style='border-left:none;width:65pt'><pre><strong>T.Bond Rate</strong></pre></td>
+    <td class=xl6612 style='border-left:none;width:65pt'><pre><strong>Smoothed 
+Growth</strong></pre></td>
+    <td class=xl6712 style='border-left:none;width:65pt'><pre><strong>Implied 
+ERP       (FCFE)</strong></pre></td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'><pre>1960</pre></td>
+    <td class=xl6912 style='border-top:none;border-left:none'><pre>5.34%</pre></td>
+    <td class=xl6912 style='border-top:none;border-left:none'><pre>3.41%</pre></td>
+    <td class=xl6812 style='border-top:none;border-left:none'><pre>58.11</pre></td>
+    <td class=xl7012 style='border-top:none;border-left:none'><pre>3.10</pre></td>
+    <td class=xl7012 style='border-top:none;border-left:none'><pre>1.98</pre></td>
+    <td class=xl7112 style='border-top:none;border-left:none'><pre>2.76%</pre></td>
+    <td class=xl7112 style='border-top:none;border-left:none'><pre>2.45%</pre></td>
+    <td class=xl6912 style='border-top:none;border-left:none'><pre>&nbsp;</pre></td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1961</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.71%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.85%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>71.55</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>3.37</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>2.04</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>2.35%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>2.41%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.92%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1962</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.81%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.40%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>63.1</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>3.67</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>2.15</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.85%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.05%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.56%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1963</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.51%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.13%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>75.02</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>4.13</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>2.35</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.14%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>4.96%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.38%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1964</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.62%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.05%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>84.75</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>4.76</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>2.58</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.21%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>5.13%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.31%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1965</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.73%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.06%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>92.43</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>5.30</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>2.83</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.65%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.46%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.32%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1966</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.74%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.59%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>80.33</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>5.41</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>2.88</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.64%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.19%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.68%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1967</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.66%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.09%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>96.47</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>5.46</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>2.98</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.70%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.25%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.20%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1968</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.51%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.93%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>103.86</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>5.72</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>3.04</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.16%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>5.32%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.00%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1969</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.63%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.52%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>92.06</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>6.10</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>3.24</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.88%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>7.55%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.74%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1970</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.98%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.46%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>92.15</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>5.51</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>3.19</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.50%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.78%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.41%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1971</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.46%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.10%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>102.09</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>5.57</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>3.16</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.89%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>4.57%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.09%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1972</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.23%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.70%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>118.05</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>6.17</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>3.19</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.41%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>5.21%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.72%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1973</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>8.16%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.70%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>97.55</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>7.96</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>3.61</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.90%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>8.30%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.30%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1974</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>13.64%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.43%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>68.56</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>9.35</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>3.72</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>7.40%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>6.42%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.59%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1975</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>8.55%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.14%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>90.19</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>7.71</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>3.73</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.76%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.99%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.13%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1976</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>9.07%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.93%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>107.46</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>9.75</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>4.22</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.81%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>8.19%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.55%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1977</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>11.43%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.11%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>95.1</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>10.87</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>4.86</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.78%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>9.52%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.92%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1978</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>12.11%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.39%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>96.11</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>11.64</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>5.18</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>9.15%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>8.48%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.72%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1979</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>13.48%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.53%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>107.94</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>14.55</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>5.97</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>10.33%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>11.70%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.45%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1980</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>11.04%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.74%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>135.76</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>14.99</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>6.44</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>12.43%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>11.01%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.03%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1981</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>12.39%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.57%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>122.55</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>15.18</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>6.83</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>13.98%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>11.42%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.73%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1982</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>9.83%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.93%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>140.64</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>13.82</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>6.93</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>10.47%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>7.96%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.90%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1983</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>8.06%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.32%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>164.93</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>13.29</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>7.12</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>11.80%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>9.09%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.31%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1984</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>10.07%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.68%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>167.24</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>16.84</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>7.83</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>11.51%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>11.02%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.11%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1985</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.42%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.88%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>211.28</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>15.68</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>8.20</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>8.99%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>7.89%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.84%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1986</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.96%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.38%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>242.17</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>14.43</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>8.19</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>7.22%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>5.54%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.58%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1987</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.49%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.71%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>247.08</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>16.04</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>9.17</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>8.86%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>9.66%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.99%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1988</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>8.20%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.68%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>277.72</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>24.12</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>10.22</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>9.14%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>9.76%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.77%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1989</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.80%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.32%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>353.4</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>24.32</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>11.73</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.93%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>9.58%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.51%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1990</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.58%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.74%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>330.22</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>22.65</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>12.35</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>8.07%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>7.39%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.89%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1991</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.58%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.11%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>417.09</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>19.30</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>12.97</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.70%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>6.34%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.48%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1992</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.16%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.90%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>435.71</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>20.87</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>12.64</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.68%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.67%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.55%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1993</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.25%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.72%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>466.45</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>26.90</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>12.69</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.79%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>4.73%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.17%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1994</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.89%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.91%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>459.27</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>31.75</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>13.36</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>7.82%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>7.23%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.55%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1995</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.74%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.30%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>615.93</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>37.70</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>14.17</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.57%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.65%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.29%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1996</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.83%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.01%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>740.74</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>40.63</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>14.89</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.41%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>6.13%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.20%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1997</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>4.08%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.60%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>970.43</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>44.09</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>15.52</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.74%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.45%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.73%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>1998</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>3.11%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>1.32%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>1229.23</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>44.27</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>16.20</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.65%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.60%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.26%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>1999</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.07%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.14%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>1469.25</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>51.68</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>16.71</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>6.44%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.75%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.05%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>2000</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.94%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.23%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>1320.28</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>56.13</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>16.27</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.11%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>3.71%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.87%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>2001</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.85%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.37%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>1148.09</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>38.85</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>15.74</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.05%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>3.56%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.62%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>2002</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.23%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.83%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>879.82</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>46.04</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>16.08</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.81%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>3.57%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.10%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>2003</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.87%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.61%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>1111.91</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>54.69</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>17.88</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.25%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.35%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.69%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>2004</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.58%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.60%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>1211.92</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>67.68</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>19.407</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.22%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>4.90%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.65%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>2005</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.47%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.79%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>1248.29</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>76.45</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>22.38</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.39%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>6.16%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.08%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>2006</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.18%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.77%</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>1418.3</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>87.72</td>
+    <td class=xl6812 style='border-top:none;border-left:none'>25.05</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.70%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>5.93%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>4.16%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7212 style='height:16.0pt;border-top:none'>2007</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.62%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.89%</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>1468.36</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>82.54</td>
+    <td class=xl7212 style='border-top:none;border-left:none'>27.73</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.02%</td>
+    <td class=xl7512 style='border-top:none;border-left:none'>5.03%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.37%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl6812 style='height:16.0pt;border-top:none'>2008</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>7.24%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.11%</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>903.25</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>65.39</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>28.05</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.21%</td>
+    <td class=xl7112 style='border-top:none;border-left:none'>2.11%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.43%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7612 style='height:16.0pt;border-top:none'>2009</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>5.35%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.00%</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>1115.10</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>59.65</td>
+    <td class=xl7412 style='border-top:none;border-left:none'>22.31</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>3.84%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>0.28%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>4.36%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7712 style='height:16.0pt;border-top:none'>2010</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>6.65%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.84%</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>1257.64</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>83.66</td>
+    <td class=xl7012 style='border-top:none;border-left:none'>23.12</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.29%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>3.33%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>5.20%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7812 style='height:16.0pt;border-top:none'>2011</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>7.72%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.07%</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>1257.60</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>97.05</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>26.02</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>1.88%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>2.75%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>6.01%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8112 style='height:16.0pt;border-top:none'>2012</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>7.18%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>2.13%</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>1426.19</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>102.47</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>30.44</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>1.76%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>2.93%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>5.78%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl7812 style='height:16.0pt;border-top:none'>2013</td>
+    <td class=xl8411 style='border-top:none;border-left:none'>5.81%</td>
+    <td class=xl8411 style='border-top:none;border-left:none'>1.96%</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>1848.36</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>107.45</td>
+    <td class=xl7912 style='border-top:none;border-left:none'>36.28</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>3.04%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>5.01%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>4.96%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8112 style='height:16.0pt;border-top:none'>2014</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>5.49%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.92%</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>2058.90</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>113.01</td>
+    <td class=xl8312 style='border-top:none;border-left:none'>39.44</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>2.17%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>2.77%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>5.78%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8510 style='height:16.0pt'>2015</td>
+    <td class=xl8012 style='border-top:none'>5.20%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>2.11%</td>
+    <td class=xl8610>2043.94</td>
+    <td class=xl8610>106.32</td>
+    <td class=xl8610>43.16</td>
+    <td class=xl8710>2.27%</td>
+    <td class=xl8012 style='border-top:none'>2.96%</td>
+    <td class=xl8710>6.12%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8810 style='height:16.0pt'>2016</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>4.86%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.01%</td>
+    <td class=xl897 style='border-left:none'>2238.83</td>
+    <td class=xl897 style='border-left:none'>108.86</td>
+    <td class=xl897 style='border-left:none'>45.03</td>
+    <td class=xl905 style='border-left:none'>2.45%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>2.64%</td>
+    <td class=xl905 style='border-left:none'>5.69%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl915 style='height:16.0pt'>2017</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>4.67%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.86%</td>
+    <td class=xl925 style='border-left:none'>2673.61</td>
+    <td class=xl925 style='border-left:none'>124.94</td>
+    <td class=xl925 style='border-left:none'>49.73</td>
+    <td class=xl935 style='border-left:none'>2.41%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>3.22%</td>
+    <td class=xl935 style='border-left:none'>5.08%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8810 style='height:16.0pt'>2018</td>
+    <td class=xl905 style='border-top:none;border-left:none'>5.92%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>2.14%</td>
+    <td class=xl897 style='border-left:none'>2506.85</td>
+    <td class=xl897 style='border-left:none'>148.34</td>
+    <td class=xl897 style='border-left:none'>53.61</td>
+    <td class=xl905 style='border-left:none'>2.68%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>3.24%</td>
+    <td class=xl905 style='border-left:none'>5.96%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl915 style='height:16.0pt'>2019</td>
+    <td class=xl935 style='border-left:none'>5.03%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.82%</td>
+    <td class=xl925 style='border-left:none'>3230.78</td>
+    <td class=xl945 style='border-left:none'>162.35</td>
+    <td class=xl945 style='border-left:none'>58.80</td>
+    <td class=xl935 style='border-left:none'>1.92%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>2.57%</td>
+    <td class=xl935 style='border-left:none'>5.20%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8810 style='height:16.0pt'>2020</td>
+    <td class=xl905 style='border-left:none'>3.72%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.51%</td>
+    <td class=xl897 style='border-left:none'>3756.07</td>
+    <td class=xl897 style='border-left:none'>139.76</td>
+    <td class=xl897 style='border-left:none'>56.70</td>
+    <td class=xl905 style='border-left:none'>0.93%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>0.74%</td>
+    <td class=xl905 style='border-left:none'>4.72%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl915 style='height:16.0pt'>2021</td>
+    <td class=xl935 style='border-left:none'>4.33%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.24%</td>
+    <td class=xl925 style='border-left:none'>4766.18</td>
+    <td class=xl925 style='border-left:none'>206.38</td>
+    <td class=xl925 style='border-left:none'>59.20</td>
+    <td class=xl935 style='border-left:none'>1.51%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>1.71%</td>
+    <td class=xl935 style='border-left:none'>4.24%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8810 style='height:16.0pt'>2022</td>
+    <td class=xl905 style='border-left:none'>5.72%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.78%</td>
+    <td class=xl897 style='border-left:none'>3839.50</td>
+    <td class=xl897 style='border-left:none'>219.49</td>
+    <td class=xl897 style='border-left:none'>68.34</td>
+    <td class=xl905 style='border-left:none'>3.88%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>5.59%</td>
+    <td class=xl905 style='border-left:none'>5.94%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl915 style='height:16.0pt'>2023</td>
+    <td class=xl935 style='border-left:none'>4.64%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.47%</td>
+    <td class=xl925 style='border-left:none'>4769.83</td>
+    <td class=xl925 style='border-left:none'>221.36</td>
+    <td class=xl925 style='border-left:none'>70.07</td>
+    <td class=xl935 style='border-left:none'>3.88%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>3.68%</td>
+    <td class=xl935 style='border-left:none'>4.60%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl8810 style='height:16.0pt'>2024</td>
+    <td class=xl905 style='border-left:none'>4.14%</td>
+    <td class=xl6912 style='border-top:none;border-left:none'>1.25%</td>
+    <td class=xl897 style='border-left:none'>5881.63</td>
+    <td class=xl897 style='border-left:none'>243.32</td>
+    <td class=xl897 style='border-left:none'>73.40</td>
+    <td class=xl905 style='border-left:none'>4.58%</td>
+    <td class=xl8212 style='border-top:none;border-left:none'>4.61%</td>
+    <td class=xl905 style='border-left:none'>4.33%</td>
+  </tr>
+  <tr height=21 style='height:16.0pt'>
+    <td height=21 class=xl952 style='height:16.0pt'>2025</td>
+    <td class=xl96 style='border-left:none'>3.97%</td>
+    <td class=xl7312 style='border-top:none;border-left:none'>1.15%</td>
+    <td class=xl97 style='border-left:none'>6845.50</td>
+    <td class=xl97 style='border-left:none'>271.52</td>
+    <td class=xl97 style='border-left:none'>78.51</td>
+    <td class=xl96 style='border-left:none'>4.18%</td>
+    <td class=xl8012 style='border-top:none;border-left:none'>4.61%</td>
+    <td class=xl96 style='border-left:none'>4.23%</td>
+  </tr>
+  <![if supportMisalignedColumns]>
+  <tr height=0 style='display:none'>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+    <td style='width:65pt'></td>
+  </tr>
+  <![endif]>
+</table>
+<p><em>Update: Januaary 2026</em></p>
+<p><!----------------------------->
+  <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+  <!----------------------------->
+</p>
+<div id="histimpl1_1958" align=center x:publishsource="Excel"></div>
+<!----------------------------->
+<!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
+<!----------------------------->
+</body>
+
+</html>

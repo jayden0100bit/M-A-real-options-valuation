@@ -1,0 +1,55 @@
+group,item,value,unit,value_type,source,notes
+disney_forecast,revenue_FY2018,58400.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,ebitda_FY2018,17283.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,segment_operating_income_FY2018,15300.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,revenue_FY2019,62564.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,ebitda_FY2019,19369.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,segment_operating_income_FY2019,17329.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,revenue_FY2020,65396.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,ebitda_FY2020,20893.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,segment_operating_income_FY2020,18768.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,revenue_FY2021,67935.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,ebitda_FY2021,22441.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,segment_operating_income_FY2021,20176.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,revenue_FY2022,70313.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,ebitda_FY2022,23555.0,USD_m,reported_forecast (Disney street forecasts),JPROXY_ORIG_20180530 p.153 t613,
+disney_forecast,segment_operating_income_FY2022,,USD_m,not_available_in_source,JPROXY_ORIG_20180530 p.153 t613,FY2022 shown as n/a in the proxy
+disney_forecast,corporate_unallocated_FY2020,659.0,USD_m,reported_forecast (Disney street estimates),JPROXY_ORIG_20180530 p.152,
+disney_forecast,corporate_unallocated_cagr,0.042,ratio,reported_forecast (implied CAGR),JPROXY_ORIG_20180530 p.152,used to extend corporate expense to FY2021-FY2022 (estimate)
+disney_actual_FY2018,interest_expense_net,-574.0,USD_m,reported,DIS_10K_FY2018 p.62 [HF01556],held flat in projections (estimate)
+disney_actual_FY2018,net_income_nci,-468.0,USD_m,reported,DIS_10K_FY2018 p.62 [HF01561],held flat in projections (estimate)
+disney_actual_FY2018,net_income_attributable_parent,12598.0,USD_m,reported,DIS_10K_FY2018 p.62 [HF01562],
+disney_actual_FY2018,shares_diluted,1507.0,shares_m,reported,DIS_10K_FY2018 p.62 [HF01565],held flat in projections (estimate)
+disney_actual_FY2018,eps_diluted,8.36,USD_per_share,reported,DIS_10K_FY2018 p.62 [HF01563],
+remainco_forecast,revenue_FY2020_june,22462.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,ebitda_FY2020_june,5138.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,revenue_FY2021_june,22488.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,ebitda_FY2021_june,5348.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,revenue_FY2022_june,22335.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,ebitda_FY2022_june,4709.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,revenue_FY2023_june,22923.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_forecast,ebitda_FY2023_june,5150.0,USD_m,reported_forecast (Disney forecasts for RemainCo),JPROXY_ORIG_20180530 p.129 t473,
+remainco_actual_FY2018_pro_forma,interest_expense_net,-1205.0,USD_m,reported (pro forma),DIS_8KA_20190327_EX99_4 p.4 [HF03069],held flat in projections (estimate)
+remainco_actual_FY2018_pro_forma,interest_income,39.0,USD_m,reported (pro forma),DIS_8KA_20190327_EX99_4 p.4 [HF03070],held flat in projections (estimate)
+remainco_actual_FY2018_pro_forma,equity_income_affiliates,-563.0,USD_m,reported (pro forma),DIS_8KA_20190327_EX99_4 p.4 [HF03068],held flat in projections (estimate)
+remainco_actual_FY2018_pro_forma,net_income_nci,-257.0,USD_m,reported (pro forma),DIS_8KA_20190327_EX99_4 p.4 [HF03075],held flat in projections (estimate)
+remainco_estimate,da_pct_revenue,0.0201,ratio,estimate,"dcf_assumptions.csv (Stage 3, B)",
+perimeter,rsn_revenue_share_FY2018,0.207712,ratio,derived,financial_ratios.csv (Stage 2; 8-K/A Ex. 99.3 bridge),RSN operating profit assumed proportional to revenue (estimate)
+perimeter,rsn_sale_proceeds,11000.0,USD_m,reported,transaction_assumptions P20,assumed to repay acquisition debt; tax on gain not modelled
+financing,cash_consideration,35700.0,USD_m,reported,transaction_assumptions C12,
+financing,new_shares_issued_m,306.844635,shares_m,reported,transaction_assumptions C10,
+financing,average_disney_price_closing,114.1801,USD_per_share,reported,transaction_assumptions C05,
+financing,stock_consideration_implied,35000.0,USD_m,reported,transaction_assumptions C13,
+financing,bridge_loans_drawn,31100.0,USD_m,reported,transaction_assumptions P22,
+financing,bridge_repaid_with_acquired_cash,16100.0,USD_m,reported,transaction_assumptions P23,
+financing,original_all_stock_new_shares_m,515.0,shares_m,reported,transaction_assumptions O06,
+financing,interest_rate_new_debt,0.033,ratio,reported_assumption (Disney pro forma),DIS_8KA_20190327_EX99_3 p.12,short-term bridge/CP rate assumed by Disney; long-term refinancing would cost more (see sensitivity)
+financing,disney_pro_forma_financing_interest_FY2018,500.0,USD_m,reported,DIS_10K_FY2019 p.98,cross-check only
+financing,planned_buybacks_dec2017,20000.0,USD_m,management_guidance,DIS_425_20171215_CALL p.unnumbered,used only in the original-structure variant
+financing,buyback_program_terminated_mar2019,yes,text,reported,DIS_10K_FY2019 p.114,base case assumes no buybacks
+purchase_accounting,incremental_amortization_ex_rsn,2700.0,USD_m,derived,DIS_10K_FY2019 p.98,"FY2018 3.5bn - 0.8bn RSN = 2.7bn; FY2019 3.1bn - 0.4bn = 2.7bn; held flat FY2020-22 (estimate; film-cost step-ups amortize faster early on, intangibles over 9-16 years)"
+tax,tax_rate,0.22,ratio,estimate,dcf_assumptions.csv (Stage 3 B: 21% federal + ~1% state),"applied to all pre-tax items incl. interest, PPA amortization, synergies and integration costs"
+reported_anchor,disney_eps_diluted FY2018 (12m to 29 Sep 2018),8.36,USD_per_share,reported,DIS_8KA_20190327_EX99_3 p.5 t6,
+reported_anchor,pro_forma_combined_eps_diluted FY2018 (12m to 29 Sep 2018),5.94,USD_per_share,reported (pro forma),DIS_8KA_20190327_EX99_3 p.5 t6,GAAP basis: includes purchase-accounting amortization and financing; excludes synergies; RSNs removed
+reported_anchor,disney_eps_diluted Q1 FY2019 (3m to 29 Dec 2018),1.86,USD_per_share,reported,DIS_8KA_20190327_EX99_3 p.6 t7,
+reported_anchor,pro_forma_combined_eps_diluted Q1 FY2019 (3m to 29 Dec 2018),1.24,USD_per_share,reported (pro forma),DIS_8KA_20190327_EX99_3 p.6 t7,GAAP basis: includes purchase-accounting amortization and financing; excludes synergies; RSNs removed

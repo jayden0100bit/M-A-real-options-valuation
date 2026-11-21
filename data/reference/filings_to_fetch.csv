@@ -1,0 +1,41 @@
+doc_id,entity,cik,form,filing_date,period_end,accession,filename,description
+DIS_10K_FY2015,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,10-K,2015-11-25,2015-10-03,0001001039-15-000255,fy2015_q4x10k.htm,Disney annual report FY2015
+DIS_10K_FY2016,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,10-K,2016-11-23,2016-10-01,0001001039-16-000516,fy2016_q4x10k.htm,Disney annual report FY2016
+DIS_10K_FY2017,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,10-K,2017-11-22,2017-09-30,0001001039-17-000198,fy2017_q4x10k.htm,Disney annual report FY2017
+DIS_10K_FY2018,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,10-K,2018-11-21,2018-09-29,0001001039-18-000187,fy2018_q4x10k.htm,Disney annual report FY2018 (supplementary; pre-closing deal status)
+FOX_10K_FY2015,Twenty-First Century Fox Inc.,1308161,10-K,2015-08-13,2015-06-30,0001564590-15-007133,fox-10k_20150630.htm,21CF annual report FY2015
+FOX_10K_FY2016,Twenty-First Century Fox Inc.,1308161,10-K,2016-08-11,2016-06-30,0001564590-16-023961,fox-10k_20160630.htm,21CF annual report FY2016
+FOX_10K_FY2017,Twenty-First Century Fox Inc.,1308161,10-K,2017-08-14,2017-06-30,0001564590-17-017693,fox-10k_20170630.htm,21CF annual report FY2017
+FOX_10K_FY2018,Twenty-First Century Fox Inc.,1308161,10-K,2018-08-13,2018-06-30,0001564590-18-021493,fox-10k_20180630.htm,21CF annual report FY2018 (supplementary; last full pre-closing year)
+DIS_8K_20171214,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K,2017-12-14,2017-12-13,0000950157-17-001598,form8k.htm,Disney 8-K: original merger agreement (Dec 13 2017)
+DIS_8K_20171214_EX2_1,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K EX-2.1,2017-12-14,2017-12-13,0000950157-17-001598,ex2-1.htm,Original Agreement and Plan of Merger (Dec 13 2017)
+DIS_8K_20171214_EX99_1,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K EX-99.1,2017-12-14,2017-12-13,0000950157-17-001598,ex99-1.htm,Disney press release announcing original agreement
+FOX_8K_20171214,Twenty-First Century Fox Inc.,1308161,8-K,2017-12-14,2017-12-14,0001193125-17-368807,d511050d8k.htm,21CF 8-K: original agreement announcement
+FOX_8K_20171214_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2017-12-14,2017-12-14,0001193125-17-368807,d511050dex991.htm,21CF/Disney joint press release (original agreement)
+FOX_8K_20171214_EX99_2,Twenty-First Century Fox Inc.,1308161,8-K EX-99.2,2017-12-14,2017-12-14,0001193125-17-368807,d511050dex992.htm,21CF press release (exhibit 99.2)
+JPROXY_ORIG_20180530,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,424B3,2018-05-30,,0001193125-18-177585,d565472d424b3.htm,Joint proxy statement/prospectus for the ORIGINAL (all-stock) merger agreement (superseded)
+DIS_8K_20180621,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K,2018-06-21,2018-06-20,0000950157-18-000744,form8k.htm,Disney 8-K: amended and restated merger agreement (Jun 20 2018)
+DIS_8K_20180621_EX2_1,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K EX-2.1,2018-06-21,2018-06-20,0000950157-18-000744,ex2-1.htm,Amended and Restated Agreement and Plan of Merger (Jun 20 2018)
+DIS_8K_20180621_EX99_1,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,8-K EX-99.1,2018-06-21,2018-06-20,0000950157-18-000744,ex99-1.htm,Disney press release announcing amended agreement
+FOX_8K_20180620,Twenty-First Century Fox Inc.,1308161,8-K,2018-06-20,2018-06-20,0001193125-18-197423,d618300d8k.htm,21CF 8-K (Jun 20 2018)
+FOX_8K_20180620_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2018-06-20,2018-06-20,0001193125-18-197423,d618300dex991.htm,21CF press release (Jun 20 2018)
+JPROXY_AMENDED_20180628,TWDC Holdco 613 Corp. (now The Walt Disney Company),1744489,424B3,2018-06-28,,0001193125-18-207599,d770960d424b3.htm,2018 joint proxy statement/prospectus for the AMENDED merger agreement (primary deal source; includes RemainCo financial information)
+FOX_8K_20190305,Twenty-First Century Fox Inc.,1308161,8-K,2019-03-08,2019-03-05,0001193125-19-069224,d708775d8k.htm,21CF 8-K (Mar 2019)
+FOX_8K_20190312,Twenty-First Century Fox Inc.,1308161,8-K,2019-03-12,2019-03-12,0001193125-19-071456,d711693d8k.htm,21CF 8-K (Mar 12 2019)
+FOX_8K_20190312_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2019-03-12,2019-03-12,0001193125-19-071456,d711693dex991.htm,21CF press release (Mar 12 2019)
+FOX_8K_20190315_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2019-03-15,2019-03-15,0001193125-19-076778,d723106dex991.htm,21CF press release (Mar 15 2019)
+FOX_8K_20190318_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2019-03-19,2019-03-18,0001193125-19-078490,d682021dex991.htm,21CF press release (Mar 18 2019)
+FOX_8K_20190319A_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2019-03-19,2019-03-19,0001193125-19-079034,d721340dex991.htm,21CF press release (Mar 19 2019)
+FOX_8K_20190319B_EX99_1,Twenty-First Century Fox Inc.,1308161,8-K EX-99.1,2019-03-19,2019-03-19,0001193125-19-079716,d710665dex991.htm,21CF press release (Mar 19 2019)
+FOX_8K_20190320,Twenty-First Century Fox Inc.,1308161,8-K,2019-03-20,2019-03-20,0000950157-19-000354,form8k.htm,21CF 8-K (Mar 20 2019) completion of merger
+DIS_8K12B_20190320,The Walt Disney Company (formerly TWDC Holdco 613 Corp.),1744489,8-K12B,2019-03-20,2019-03-15,0000950157-19-000301,form8k-12b.htm,New Disney 8-K12B successor issuer
+DIS_8K_20190320,The Walt Disney Company (formerly TWDC Holdco 613 Corp.),1744489,8-K,2019-03-20,2019-03-20,0000950157-19-000353,form8k.htm,New Disney 8-K: completion of acquisition (Mar 20 2019)
+DIS_8KA_20190327,The Walt Disney Company,1744489,8-K/A,2019-03-27,2019-03-20,0001193125-19-088677,d695603d8ka.htm,New Disney 8-K/A: financial statements of business acquired and pro forma information
+DIS_8KA_20190327_EX99_1,The Walt Disney Company,1744489,8-K/A EX-99.1,2019-03-27,2019-03-20,0001193125-19-088677,d695603dex991.htm,8-K/A exhibit 99.1
+DIS_8KA_20190327_EX99_2,The Walt Disney Company,1744489,8-K/A EX-99.2,2019-03-27,2019-03-20,0001193125-19-088677,d695603dex992.htm,8-K/A exhibit 99.2
+DIS_8KA_20190327_EX99_3,The Walt Disney Company,1744489,8-K/A EX-99.3,2019-03-27,2019-03-20,0001193125-19-088677,d695603dex993.htm,8-K/A exhibit 99.3
+DIS_8KA_20190327_EX99_4,The Walt Disney Company,1744489,8-K/A EX-99.4,2019-03-27,2019-03-20,0001193125-19-088677,d695603dex994.htm,8-K/A exhibit 99.4
+DIS_10Q_Q2FY2019,The Walt Disney Company,1744489,10-Q,2019-05-08,2019-03-30,0001744489-19-000100,fy2019q210qdoc.htm,Disney 10-Q Q2 FY2019 (first post-closing quarter; preliminary purchase price allocation)
+DIS_10K_FY2019,The Walt Disney Company,1744489,10-K,2019-11-20,2019-09-28,0001744489-19-000225,fy2019q410k.htm,Disney annual report FY2019 (acquisition disclosures; purchase price allocation)
+DIS_425_20171215_CALL,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,425,2017-12-15,2017-12-14,0000950157-17-001612,form425.htm,Disney Form 425: transcript of 14 Dec 2017 investor conference call (synergy guidance; accretion; financing)
+DIS_425_20171215_MEETING,The Walt Disney Company (now TWDC Enterprises 18 Corp.),1001039,425,2017-12-15,2017-12-14,0000950157-17-001616,form425.htm,Disney Form 425: transcript of 14 Dec 2017 investor meeting (synergy sources; leverage; buybacks)

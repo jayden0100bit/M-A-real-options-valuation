@@ -8,3 +8,7 @@ matplotlib==3.10.8    # >=3.7
 jupyter==1.1.1        # >=1.0
 nbclient==0.11.0      # >=0.8
 ipykernel==7.3.0       # >=6.25
+
+# Data collection pipeline (src/): SEC HTML parsing
+beautifulsoup4==4.15.0  # >=4.12
+lxml==6.1.1             # >=4.9

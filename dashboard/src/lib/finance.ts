@@ -32,6 +32,22 @@ export function binomialCall(S: number, K: number, r: number, T: number, sigma: 
   return v[0];
 }
 
+/** Full CRR lattice for small n (used to draw the tree). Root value equals binomialCall with the same inputs. */
+export function binomialLattice(S: number, K: number, r: number, T: number, sigma: number, n = 4, american = false, q = 0) {
+  const dt = T / n, u = Math.exp(sigma * Math.sqrt(dt)), d = 1 / u;
+  const p = (Math.exp((r - q) * dt) - d) / (u - d), disc = Math.exp(-r * dt);
+  const nodes = Array.from({ length: n + 1 }, (_, i) => Array.from({ length: i + 1 }, (_, j) => ({ s: S * Math.pow(u, j) * Math.pow(d, i - j), v: 0, early: false })));
+  nodes[n].forEach((x) => { x.v = Math.max(x.s - K, 0); });
+  for (let i = n - 1; i >= 0; i--) {
+    for (let j = 0; j <= i; j++) {
+      const cont = disc * (p * nodes[i + 1][j + 1].v + (1 - p) * nodes[i + 1][j].v), ex = nodes[i][j].s - K;
+      nodes[i][j].v = american && ex > cont ? ex : cont;
+      nodes[i][j].early = american && ex > cont;
+    }
+  }
+  return { nodes, u, d, p, dt };
+}
+
 // ---------------------------------------------------------------- DCF (src/valuation/dcf.py, build_valuation.py)
 export interface ModelA { base_revenue: number; growth: number; margin: number; da_pct: number; capex_pct: number; nwc_pct: number; frac: number[]; t: number[]; t_n: number; wacc: number }
 export interface ModelB { fy: string[]; revenue: number[]; margin: number[]; resid_pct: number[]; da_pct: number; capex_pct: number; conv: number; frac: number[]; t: number[]; t_n: number; k_exp: number[]; wacc: number; bridge_total: number }

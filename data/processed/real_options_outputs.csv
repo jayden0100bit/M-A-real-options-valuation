@@ -1,0 +1,33 @@
+perspective,section,case,metric,value,unit,value_type,notes
+B_proxy_2018-05,Option value,base,black_scholes_call,2389.360818,USD_m,estimate,"d1=0.4373, d2=0.1985"
+B_proxy_2018-05,Option value,base,option_value_per_21cf_share,1.27695,USD_per_share,estimate,
+B_proxy_2018-05,Option value,base,static_npv_S_minus_K,0.0,USD_m,estimate,zero by construction (at the money)
+B_proxy_2018-05,Option value,base,advisors_static_value_of_revenue_synergies,18009.792156,USD_m,derived,what a DCF counting revenue synergies as certain would add (no investment cost)
+B_proxy_2018-05,Binomial cross-check,q = 0,binomial_european_n5000,2389.274612,USD_m,estimate,
+B_proxy_2018-05,Binomial cross-check,q = 0,binomial_american_n5000,2389.274612,USD_m,estimate,equals European: early exercise of a call is never optimal without leakage
+B_proxy_2018-05,Monte Carlo cross-check,q = 0,mc_european_call,2394.255528,USD_m,estimate,"400k antithetic paths, seed 42, s.e. 3.67"
+B_proxy_2018-05,Option value,leakage q = 3%,black_scholes_merton_call,1461.227628,USD_m,estimate,
+B_proxy_2018-05,Option value,leakage q = 3%,binomial_european_n2000,1461.030389,USD_m,estimate,
+B_proxy_2018-05,Option value,leakage q = 3%,binomial_american_n2000,1517.212458,USD_m,estimate,early-exercise premium = American - European
+B_proxy_2018-05,Option value,leakage q = 3%,early_exercise_premium,56.182069,USD_m,estimate,
+B_proxy_2018-05,Scenario,bear,option_value_american_crr,0.270372,USD_m,estimate,"S at the low end of the advisors' range, lower volatility (-10pp), 2-year window, 3% leakage"
+B_proxy_2018-05,Scenario,bear,option_value_per_21cf_share,0.000144,USD_per_share,estimate,
+B_proxy_2018-05,Scenario,base,option_value_american_crr,2389.145311,USD_m,estimate,as defined above
+B_proxy_2018-05,Scenario,base,option_value_per_21cf_share,1.276834,USD_per_share,estimate,
+B_proxy_2018-05,Scenario,bull,option_value_american_crr,6021.676209,USD_m,estimate,"S at the high end, higher volatility (+10pp), 4-year window"
+B_proxy_2018-05,Scenario,bull,option_value_per_21cf_share,3.218173,USD_per_share,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),sigma low = 0.03786,option_value,1385.903698,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),sigma high = 0.2379,option_value,3537.263942,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),T low = 1,option_value,1218.724396,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),T high = 5,option_value,3315.730132,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),K low = 1.351e+04,option_value,5588.976694,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),K high = 2.251e+04,option_value,756.941382,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),S low = 1.544e+04,option_value,979.340635,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),S high = 2.058e+04,option_value,4350.693671,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),r low = 0.0153,option_value,2107.818171,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),r high = 0.0353,option_value,2686.799623,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),q low = 0,option_value,2389.360818,USD_m,estimate,
+B_proxy_2018-05,Sensitivity (Black-Scholes),q high = 0.06,option_value,823.099276,USD_m,estimate,
+B_proxy_2018-05,Deal justification with option,without expansion option,value_created_vs_amended_38,-96.108941,USD_m,estimate,"standalone 49,061 + net cost synergies 21,947 + option 0 - $38 x 1,871.1m"
+B_proxy_2018-05,Deal justification with option,with expansion option (base),value_created_vs_amended_38,2293.251877,USD_m,estimate,"standalone 49,061 + net cost synergies 21,947 + option 2,389 - $38 x 1,871.1m"
+B_proxy_2018-05,Deal justification with option,with revenue synergies counted as certain (advisors' static view),value_created_vs_amended_38,17913.683215,USD_m,estimate,"standalone 49,061 + net cost synergies 21,947 + option 18,010 - $38 x 1,871.1m"

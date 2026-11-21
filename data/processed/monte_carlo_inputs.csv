@@ -1,0 +1,11 @@
+variable,distribution,parameters,value_type,anchor
+synergy_realization,triangular,"(0.5, 1.0, 1.25)",estimate,"Stage 4 bear 75% / base 100% / bull 125%, lower tail to 50%"
+synergy_delay_years,discrete,"({0: 0.6, 1: 0.3, 2: 0.1},)",estimate,Stage 4 bear = one year late
+integration_cost_multiple,triangular,"(0.75, 1.0, 2.0)",estimate,Stage 4 range 0.75x-2.0x; later severance estimate 0.75x
+revenue_growth_shift,normal_truncated,"(0.0, 0.01, -0.03, 0.03)",estimate,Stage 3 sensitivity +/-2pp
+ebitda_margin_shift,normal_truncated,"(0.0, 0.01, -0.03, 0.03)",estimate,Stage 3 sensitivity +/-2pp
+seed,fixed,20180530,setting,
+n_draws,fixed,20000,setting,
+consideration_amended_38,fixed,71103.6,derived,"$38 x 1,871.1m fully diluted shares"
+consideration_original_at_2018-05-30,fixed,51352.7,derived,0.2745 x Disney close 30 May 2018 x shares
+expansion_option_value,fixed,2389.4,estimate,Stage 5A Black-Scholes base
